@@ -53,6 +53,6 @@ while True:
 	c, addr = s.accept()     
 	print ('Got connection from', addr )
 	msg = 'Thank you for connecting'
-	start_new_thread(threaded, (c,s,))
+	start_new_thread(threaded, (c,))
 	
 s.close()
