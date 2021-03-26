@@ -10,12 +10,13 @@ port = 12354
 # connect to the server on local computer 
 s.connect(('192.168.122.154', port)) 
 
-for i in range(1,10):
+for i in range(2):
   
 		# message sent to server
-	message = str(i)
-	if i==5:
-		message =str(10000000)
+	if i==0:
+		message='9791'
+	if i==1:
+		message='68'
 	s.send(message.encode('ascii'))
   
 	# messaga received from server

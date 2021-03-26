@@ -2,10 +2,24 @@ import socket
 from _thread import *
 import threading
 
-def sum(n):
-	s=0
-	for i in range(1,n+1):
-		s=s+i
+def isprime(num):
+
+	s =""
+	if num > 1:
+	 
+	    # Iterate from 2 to n / 2
+	    for i in range(2, int(num/2)+1):
+	 
+	        # If num is divisible by any number between
+	        # 2 and n / 2, it is not prime
+	        if (num % i) == 0:
+	            s="no"
+	            break
+	    else:
+	        s="yes"
+	 
+	else:
+	    s="no"
 	return s
 
 def threaded(c):
@@ -18,7 +32,7 @@ def threaded(c):
 			break
   
 		# reverse the given string from client
-		a = sum(int(data))
+		a = isprime(int(data))
 		print(a)
 		# send back reversed string to client
 		c.send(str(a).encode('ascii'))
