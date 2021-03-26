@@ -8,7 +8,7 @@ s = socket.socket()
 port = 12354
   
 # connect to the server on local computer 
-s.connect(('127.0.0.1', port)) 
+s.connect(('192.168.122.154', port)) 
 
 for i in range(1,10):
   
