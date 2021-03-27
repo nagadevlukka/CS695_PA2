@@ -1,0 +1,5 @@
+Domain: 'vm1'
+  cpu.time=143936142598
+  cpu.user=18240000000
+  cpu.system=44890000000
+

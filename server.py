@@ -13,13 +13,13 @@ def isprime(num):
 	        # If num is divisible by any number between
 	        # 2 and n / 2, it is not prime
 	        if (num % i) == 0:
-	            s="no"
+	            s=str(num) +" is not a prime number"
 	            break
 	    else:
-	        s="yes"
+	        s=str(num) +" is a prime number"
 	 
 	else:
-	    s="no"
+	    s=str(num) +" is not a prime number"
 	return s
 
 def threaded(c):
