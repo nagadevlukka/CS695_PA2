@@ -10,7 +10,7 @@ port = 12354
 # connect to the server on local computer 
 s.connect(('192.168.122.154', port)) 
 
-for i in range(100000):
+for i in range(10000):
   
 		# message sent to server
 	message='9791'
