@@ -28,12 +28,12 @@ def threaded(c):
 		# data received from client
 		data = c.recv(1024).decode('ascii')
 		if not data:
-			print('Bye')
+			print('completed')
 			break
   
 		# reverse the given string from client
 		a = isprime(int(data))
-		print(a)
+		#print(a)
 		# send back reversed string to client
 		c.send(str(a).encode('ascii'))
   
